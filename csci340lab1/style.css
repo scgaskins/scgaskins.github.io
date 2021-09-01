@@ -2,6 +2,14 @@ h1 {
   color: #00FF00;
 }
 
+p {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+li {
+  font-family: 'Fira Sans', sans-serif;
+}
+
 .col-6 {
   background-color: #43216e;
   color: #beeeef;
@@ -25,14 +33,16 @@ h1 {
 
 .jumbotron {
   background-image: url("zebra-stripes.jpg");
-  padding: 200px;
-  margin: 20px
+  padding: 100px;
+  margin: 50px
 }
 
 .jumbotron h1 {
   color: #999999;
+  font-family: 'Lobster', cursive;
 }
 
 .jumbotron h3 {
   color: #999999;
+  font-family: 'Lobster', cursive;
 }
