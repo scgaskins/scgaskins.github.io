@@ -1,3 +1,38 @@
 h1 {
   color: #00FF00;
 }
+
+.col-6 {
+  background-color: #43216e;
+  color: #beeeef;
+}
+
+.col-4 {
+  background-color: #546564;
+}
+
+.col-4 li {
+  color: #0000FF;
+}
+
+.col-4 p {
+  color: #FF0000
+}
+
+.col-2 {
+  background-color: #689894;
+}
+
+.jumbotron {
+  background-image: url("zebra-stripes.jpg");
+  padding: 200px;
+  margin: 20px
+}
+
+.jumbotron h1 {
+  color: #999999;
+}
+
+.jumbotron h3 {
+  color: #999999;
+}
