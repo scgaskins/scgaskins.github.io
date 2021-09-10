@@ -1,31 +1,54 @@
 $(document).ready(function() {
-  $('#random').click(function() {
-    changeAllCats();
+  $('#basic').click(function() {
+    changeAllCats("");
   });
 
-  function changeAllCats() {
-    var numCats = 6
+  $('#blur').click(function() {
+    changeAllCats("&filter=blur");
+  });
+
+  $('#mono').click(function() {
+    changeAllCats("&filter=mono");
+  });
+
+  $('#sepia').click(function() {
+    changeAllCats("&filter=sepia");
+  });
+
+  $('#negative').click(function() {
+    changeAllCats("&filter=negative");
+  });
+
+  $('#paint').click(function() {
+    changeAllCats("&filter=paint");
+  });
+
+  $('#pixel').click(function() {
+    changeAllCats("&filter=pixel");
+  });
+
+  function changeAllCats(filter) {
+    var numCats = 9;
     for (var i = 1; i <= numCats; i++) {
-      getCatUrl(i);
+      changeCat(i, filter);
     }
     changeNames(numCats);
   }
 
-  function getCatUrl(catIndex) {
+  function changeCat(catIndex, filter) {
     $.ajax({
       dataType: "json",
-      url: "https://cataas.com/cat?json=true&width=400&type=sq",
+      url: "https://cataas.com/cat?json=true&width=400&type=sq" + filter,
       success: function(catResult) {
         var id = catResult["id"];
         //console.log(id);
-        $("#cat-" + catIndex).attr("src", "https://cataas.com/cat/" + id + "?width=400&type=sq");
+        $("#cat-" + catIndex).attr("src", "https://cataas.com/cat/" + id + "?width=400&type=sq" + filter);
       },
       error: function(xhr, status, error) {
         console.log(error);
         $("#cat-" + catIndex).attr("src", "http://placekitten.com/400/400");
       }
     });
-    //return catUrl;
   }
 
   function changeNames(numCats) {
@@ -44,6 +67,5 @@ $(document).ready(function() {
         console.log(error);
       }
     });
-    //return name;
   }
 });
