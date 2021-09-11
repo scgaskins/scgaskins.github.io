@@ -1,1 +1,43 @@
+input {
+  margin: 5px;
+  padding: 5px;
+  font-family: 'IBM Plex Serif', serif;
+}
 
+body {
+  background-color: #07daed;
+}
+
+p {
+  font-family: 'IBM Plex Serif', serif;
+  color: #000000;
+}
+
+img {
+  margin: 5px;
+  padding: 5px;
+}
+
+.col-4 {
+  background-color: #2b848c;
+}
+
+.col-8 {
+  background-color: #2b848c;
+}
+
+#heading {
+  background-color: #32b4bf;
+}
+
+#heading h1 {
+  font-family: 'Indie Flower', cursive;
+}
+
+#heading h3 {
+  font-family: 'Indie Flower', cursive;
+}
+
+.cats p {
+  font-family: 'Acme', sans-serif;
+}

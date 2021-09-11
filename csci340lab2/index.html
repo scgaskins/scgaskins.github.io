@@ -5,64 +5,84 @@
     <title>Lab 2</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=IBM+Plex+Serif&family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
-      <div class="row text-center">
+      <div id="heading" class="row text-center">
         <h1>Cat Pictures</h1>
+        <h3>From Around the World</h3>
       </div>
-      <div class="row text-center">
-        <div class="col-4">
-          <img id="cat-1" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-1>No name yet</p>
+      <div class="row">
+        <div class="col-8">
+          <p>Mittens here will take you on a tour of the world's cats. Just
+            click one of the buttons below to see nine cats and their names.
+            Each of the buttons will apply a different filter to the cat
+            photos.
+          </p>
+          <div class="row text-center">
+            <input id="basic" type="button" value="No Filter"></input>
+            <input id="blur" type="button" value="Blur"></input>
+            <input id="mono" type="button" value="Mono"></input>
+            <input id="sepia" type="button" value="Sepia"></input>
+            <input id="negative" type="button" value="Negative"></input>
+            <input id="paint" type="button" value="Paint"></input>
+            <input id="pixel" type="button" value="Pixel"></input>
+          </div>
         </div>
-        <div class="col-4">
-          <img id="cat-2" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-2>No name yet</p>
-        </div>
-        <div class="col-4">
-          <img id="cat-3" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-3>No name yet</p>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-4">
-          <img id="cat-4" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-4>No name yet</p>
-        </div>
-        <div class="col-4">
-          <img id="cat-5" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-5>No name yet</p>
-        </div>
-        <div class="col-4">
-          <img id="cat-6" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-6>No name yet</p>
+        <div class="col-4 text-center">
+          <img src="http://placekitten.com/400/400" alt="Sample Cat" width="400">
+          <p>Mittens</p>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-4">
-          <img id="cat-7" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-7>No name yet</p>
+      <div class="cats">
+        <div class="row text-center">
+          <div class="col-4">
+            <img id="cat-1" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-1>Mittens</p>
+          </div>
+          <div class="col-4">
+            <img id="cat-2" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-2>Mittens</p>
+          </div>
+          <div class="col-4">
+            <img id="cat-3" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-3>Mittens</p>
+          </div>
         </div>
-        <div class="col-4">
-          <img id="cat-8" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-8>No name yet</p>
+        <div class="row text-center">
+          <div class="col-4">
+            <img id="cat-4" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-4>Mittens</p>
+          </div>
+          <div class="col-4">
+            <img id="cat-5" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-5>Mittens</p>
+          </div>
+          <div class="col-4">
+            <img id="cat-6" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-6>Mittens</p>
+          </div>
         </div>
-        <div class="col-4">
-          <img id="cat-9" src="http://placekitten.com/400/400" alt="Cat" width="400">
-          <p id=name-9>No name yet</p>
+        <div class="row text-center">
+          <div class="col-4">
+            <img id="cat-7" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-7>Mittens</p>
+          </div>
+          <div class="col-4">
+            <img id="cat-8" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-8>Mittens</p>
+          </div>
+          <div class="col-4">
+            <img id="cat-9" src="http://placekitten.com/400/400" alt="Cat" width="400">
+            <p id=name-9>Mittens</p>
+          </div>
         </div>
       </div>
     </div>
-    <img id="cat" src="http://placekitten.com/400/400" alt="Cat" width="400">
-    <input id="basic" type="button" value="No Filter"></input>
-    <input id="blur" type="button" value="Blur"></input>
-    <input id="mono" type="button" value="Mono"></input>
-    <input id="sepia" type="button" value="Sepia"></input>
-    <input id="negative" type="button" value="Negative"></input>
-    <input id="paint" type="button" value="Paint"></input>
-    <input id="pixel" type="button" value="Pixel"></input>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
